@@ -1,0 +1,95 @@
+:root {
+    --dark-grey: #1d1c1c;
+    --mid-grey: #2c2c2c;
+    --light-grey: #ccc;
+}
+
+* {
+    color: rgb(194, 181, 181);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3 {
+    color: #fff5f5;
+}
+
+h1, h2 {
+    font-family: "Kaushan Script", cursive;
+}
+
+h1 {
+    font-size: 400%;
+    margin-top: 3vh;
+}
+
+h2 {
+	font-size: 240%;
+	margin-bottom: 2vh;
+    color: #55b5e6;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+body {
+    background-color: var(--dark-grey);
+}
+
+main {
+    width: clamp(250px, 50%, 800px);
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 1vh;
+    padding: 2vh 30px;
+    background-color: var(--mid-grey);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 3vh;
+}
+
+#portfolio a,
+button.disabled {
+    display: block;
+    background: #B5E655;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 1vh;
+    color: var(--dark-grey);
+    width: 100%;
+}
+
+button.disabled {
+    background-color: var(--light-grey);
+    font-size: 1em;
+}
+
+.project-tag {
+	font-size: 0.8em;
+	background: var(--light-grey);
+	border-radius: 5px;
+	color: var(--dark-grey);
+	padding: 3px 5px;
+	display: inline-block;
+	margin: 5px 5px 0 0;
+}
