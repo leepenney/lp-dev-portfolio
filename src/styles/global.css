@@ -42,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 140%;
+    margin: 0.5vh 0 1vh 0;
 }
 
 body {
@@ -49,8 +50,28 @@ body {
 }
 
 main {
+    position: relative;
     width: clamp(250px, 50%, 800px);
     margin: 0 auto;
+}
+
+#icons {
+	float: right;
+    margin-top: -30px;
+}
+
+#icons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+svg, path {
+	fill: var(--light-grey);
+}
+
+#icons a:hover svg,
+#icons a:hover path {
+    fill: #fff;
 }
 
 section {
@@ -60,15 +81,22 @@ section {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
+#about ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding-left: 2ch;
+    margin-top: 1em;
+}
+
 #portfolio .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     column-gap: 20px;
     row-gap: 3vh;
 }
 
 #portfolio a,
-button.disabled {
+button {
     display: block;
     background: #B5E655;
     text-align: center;
@@ -92,4 +120,31 @@ button.disabled {
 	padding: 3px 5px;
 	display: inline-block;
 	margin: 5px 5px 0 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input, textarea {
+	margin-bottom: 1em;
+	font-size: 1rem;
+	color: var(--dark-grey);
+	padding: 5px;
+}
+
+#contact button {
+	width: min(100%, 225px);
+	margin: 0 auto;
+}
+
+footer {
+	padding: 2vh 0;
+	text-align: center;
+	font-size: 0.9em;
 }
