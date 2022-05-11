@@ -83,14 +83,14 @@ section {
 
 #about ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 1fr 1fr;
     padding-left: 2ch;
     margin-top: 1em;
 }
 
 #portfolio .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 48%));
     column-gap: 20px;
     row-gap: 3vh;
 }
@@ -147,4 +147,10 @@ footer {
 	padding: 2vh 0;
 	text-align: center;
 	font-size: 0.9em;
+}
+
+@media (max-width: 400px) {
+    #about ul {
+        grid-template-columns: 1fr;
+    }
 }
