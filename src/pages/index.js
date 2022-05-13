@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
       </section>
       <section id="contact">
         <h2>Contact Me</h2>
-        <form name="contact" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true">
           <label for="enquirer">Your Name</label>
           <input type="text" name="enquirer" required />
           <label for="email">Your Email Address</label>
