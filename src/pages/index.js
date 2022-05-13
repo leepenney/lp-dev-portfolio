@@ -43,6 +43,7 @@ const IndexPage = ({ data }) => {
           <input type="email" name="email" required />
           <label for="message">Your Message</label>
           <textarea name="message" required></textarea>
+          <input type="hidden" name="form-name" value="contact" />
           <button type="submit">Reach Out</button>
         </form>
       </section>
